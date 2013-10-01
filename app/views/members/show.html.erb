@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Kerberos:</b>
+  <%= @member.kerberos %>
+</p>
+
+<p>
+  <b>Username:</b>
+  <%= @member.username %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @member.email %>
+</p>
+
+<p>
+  <b>Race:</b>
+  <%= @member.race %>
+</p>
+
+<p>
+  <b>League:</b>
+  <%= @member.league %>
+</p>
+
+
+<%= link_to 'Edit', edit_member_path(@member) %> |
+<%= link_to 'Back', members_path %>

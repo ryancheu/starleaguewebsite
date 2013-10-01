@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  kerberos: MyString
+  username: MyString
+  email: MyString
+  race: MyString
+  league: MyString
+
+two:
+  kerberos: MyString
+  username: MyString
+  email: MyString
+  race: MyString
+  league: MyString

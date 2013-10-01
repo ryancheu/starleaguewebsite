@@ -1,0 +1,31 @@
+<h1>Listing members</h1>
+
+<table>
+  <tr>
+    <th>Kerberos</th>
+    <th>Username</th>
+    <th>Email</th>
+    <th>Race</th>
+    <th>League</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @members.each do |member| %>
+  <tr>
+    <td><%= member.kerberos %></td>
+    <td><%= member.username %></td>
+    <td><%= member.email %></td>
+    <td><%= member.race %></td>
+    <td><%= member.league %></td>
+    <td><%= link_to 'Show', member %></td>
+    <td><%= link_to 'Edit', edit_member_path(member) %></td>
+    <td><%= link_to 'Destroy', member, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Member', new_member_path %>
